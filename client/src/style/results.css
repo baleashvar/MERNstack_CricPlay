@@ -1,0 +1,44 @@
+#resultMatchImageWin {
+    width: 50%;
+}
+
+#resultMatchImageLoss {
+    width: 50%;
+    margin-top: 8vh;
+    margin-bottom: 3vh;
+}
+
+#gameOverImage {
+    width: 55%;
+    margin-top: 9vh;
+}
+
+.resultsgif {
+    margin-bottom: 4vh;
+}
+
+.column1 {
+    white-space: nowrap;
+    margin-left: 1vw;
+}
+
+.column2 {
+    white-space: nowrap;
+    margin-left: -2vw;
+}
+
+#tablecontainer {
+    margin-bottom: 0vh;
+}
+
+@media only screen and (max-width: 700px) {
+    .column1 {
+        margin: 0vw;
+        margin-top: 2vh;
+    }
+    
+    .column2 {
+        margin: 0vw;
+        margin-bottom: 7vh;
+    }
+} 

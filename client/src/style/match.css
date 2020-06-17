@@ -1,0 +1,17 @@
+#playeradded {
+    text-align: center;
+    margin-bottom: 1vh;
+}
+
+.fa-check-circle {
+    margin-right: 0.5vw;
+    color: black;
+}
+
+#selecteleven {
+    margin: 3vh;
+}
+
+#playbutton {
+    margin: 3vh;
+}

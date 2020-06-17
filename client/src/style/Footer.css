@@ -1,0 +1,14 @@
+.footer{
+    background-color: #C6DEFF;
+    margin:0px auto;
+    padding: 20px 0px 20px 0px;
+    color: rgb(11, 10, 92);
+}
+
+.footer .col {
+    margin-bottom: 2rem;
+}
+
+.footer .btn-social-icon {
+    margin-right: 2rem;
+}
