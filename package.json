@@ -8,6 +8,7 @@
     "start": "nodemon index",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
+  "proxy": "http://localhost:3000",
   "author": "Abhishek Srivastav",
   "license": "ISC",
   "dependencies": {
