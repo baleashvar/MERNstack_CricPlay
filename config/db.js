@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
-    await mongoose.connect("mongodb+srv://user-abhi:cluster-abhi@cluster1-abhi-qjpjx.mongodb.net/test?authSource=admin&replicaSet=Cluster1-Abhi-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true", {
+    await mongoose.connect( {
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
