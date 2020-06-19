@@ -17,7 +17,7 @@ app.use(bodyParser.json());
 //     res.send('Hello World!')
 // })
 
-app.use('/api', playerRouter);
+app.use('/', playerRouter);
 
 
 if(process.env.NODE_ENV === 'production') {
