@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const api = axios.create({
-    baseURL: '/'
+    baseURL: '/'                    //to run on localhost make it 'http://localhost:3000/'
 })
 
 export const insertPlayer = (payload) => api.post(`/createplayer`, payload)
