@@ -1,8 +1,9 @@
 const mongoose = require('mongoose'); 
-//"mongodb+srv://user-abhi:cluster-abhi@cluster1-abhi-qjpjx.mongodb.net/Cluster1-Abhi?retryWrites=true&w=majority"
+
+
 const connectDB = async () => {
   try {
-    await mongoose.connect( "mongodb+srv://user-abhi:cluster-abhi@cluster1-abhi-qjpjx.mongodb.net/test?authSource=admin&replicaSet=Cluster1-Abhi-shard-0&readPreference=primary&appname=MongoDB%20Compass&ssl=true" , {
+    await mongoose.connect( ENV['MONGOLAB_URI']  {   //MONGOLAB_URI is heroku config var and MONGODBURI_LOCAL is a local environment var
       useNewUrlParser: true,
       useUnifiedTopology: true,
       useCreateIndex: true,
