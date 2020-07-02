@@ -6,7 +6,7 @@ A cricket game where you create, update and manage players of your cricket team 
 ## Backend - Node.js, Express.js, MongoDB
 
 
-## Setting Up the Game Locally-
+## Setting up and playing the game locally-
 
 1. Fork the repo and clone it.
 2. Make sure you have yarn Node.js & MongoDB installed in your system.
@@ -15,11 +15,11 @@ A cricket game where you create, update and manage players of your cricket team 
 5. Run ```cd client && yarn start``` in other terminal (keeping the server running) for UI, it will open on a new tab on ```port 3000```.
 6. Navigate to ```http://localhost:3000``` to play the game. 
 
-## Deployed
+## Deployed-
 
 Checkout the deployed version of game at - ```https://cricplay.herokuapp.com```
 
-## Contributing
+## Contributing-
 
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
