@@ -1,6 +1,6 @@
 # MERNstack_CricPlay
 
-A cricket game where you create, update and manage players of ypur cricket team and play matches against team Hampshire in an all dynamic environment.
+A cricket game where you create, update and manage players of your cricket team and play matches against team Hampshire in an all dynamic environment.
 
 ## Front-End - React
 ## Backend - Node.js, Express.js, MongoDB
