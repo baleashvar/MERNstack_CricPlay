@@ -1,7 +1,7 @@
 const Player = require('../models/player-model');
 
 
-getPlayers = async(req, res) => {
+exports.getPlayers = async(req, res) => {
     await Player.find({}, (err, players) => {
         if(err) {
             res.status(400).json({success: false, error: err})
@@ -16,7 +16,7 @@ getPlayers = async(req, res) => {
 }
 
 
-getPlayerById = async(req, res) => {
+exports.getPlayerById = async(req, res) => {
     await Player.findOne({_id: req.params.id}, (err, player) => {
         if(err) {
             return res.status(400).json({ success: false, error: err })
@@ -31,7 +31,7 @@ getPlayerById = async(req, res) => {
 }
 
 
-createPlayer = async(req, res) => {
+exports.createPlayer = async(req, res) => {
     const body = req.body;
 
     if (!body) {
@@ -65,7 +65,7 @@ createPlayer = async(req, res) => {
 }
 
 
-updatePlayer = async(req, res) => {
+exports.updatePlayer = async(req, res) => {
     const body = req.body;
 
     if (!body) {
@@ -111,7 +111,7 @@ updatePlayer = async(req, res) => {
 }
 
 
-deletePlayer = async (req, res) => {
+exports.deletePlayer = async (req, res) => {
     await Player.findOneAndDelete({ _id: req.params.id }, (err, player) => {
         if (err) {
             return res.status(400).json({ success: false, error: err })
@@ -127,11 +127,3 @@ deletePlayer = async (req, res) => {
     }).catch(err => console.log(err))
 }
 
-
-module.exports = {
-    getPlayers,
-    getPlayerById,
-    createPlayer,
-    updatePlayer,
-    deletePlayer
-}
