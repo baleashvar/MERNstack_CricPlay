@@ -4,7 +4,7 @@ const cors = require('cors');
 const app = express();
 const connectDB = require('./config/db');
 const playerRouter = require('./routes/player-router');
-const path = require('path');
+const path = require('path')
 
 require('dotenv').config();
 connectDB();
